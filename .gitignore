@@ -1,12 +1,65 @@
-*.class
+/
+  public Date(int month, int day, int year) {
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+  }
 
-# Package Files #
-*.jar
-*.war
-*.ear
+  
+  public Date(String s) {
+try{
+int i1 = indexof('/');
+int i2 = indexof()
+  }
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+ 
+  public static boolean isLeapYear(int year) {
+     return year%400 ==0;                       
+  }
+
+  
+  
+  public static int daysInMonth(int month, int year) {
+    if(!isLeapYear(year))
+      return A[month -1};
+      else{// is a leap year
+        if(month==2)
+          return 29;
+        else 
+          return A[month -1];
+    return 0;                          
+  }
+
+  
+  public static boolean isValidDate(int month, int day, int year) {
+    return true;                        // replace this line with your solution
+  }
+
+  
+  public String toString() {
+    return "stuff";                     // replace this line with your solution
+  }
+
+  
+  public boolean isBefore(Date d) {
+    if(y<d.y)
+      return true;
+    else if(y>d.y)
+      return false;
+      
+  }
+
+  
+  public boolean isAfter(Date d) {
+    return true;                        // replace this line with your solution
+  }
+ 
+  
+  public int dayInYear() {
+    return 0;                           // replace this line with your solution
+  }
+
+  
+  public int difference(Date d) {
+    return 0;                           // replace this line with your solution
+  }
+
+  
