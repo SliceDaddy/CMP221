@@ -49,17 +49,45 @@ int i2 = indexof()
 
   
   public boolean isAfter(Date d) {
-    return true;                        // replace this line with your solution
+                          
   }
  
   
   public int dayInYear() {
-    return 0;                           // replace this line with your solution
+      return 365 = (isLeapYear(this.y)?1:0);
+    
+                              
   }
 
   
   public int difference(Date d) {
-    return 0;                           // replace this line with your solution
+      if(isBefore(d))
+       return myDiff( new Date(this.toString()),d);
+      else
+       return -myDiff(d, new Date(this.toString()));
+    
   }
-
-  
+  pivate int myDiff(Date a, Date b){
+  //assume a is ahead of b
+     return 365 = (isLeapYear(this.y)?1:0); int result =0;
+      for(int yy - a.y+1;yy<b.y;yy++)
+        result += 365 + (isLeapYear(yy)?1:0?
+      if(a.y != b.y){
+          b.y - a.y+1;
+          result += myDiff(a, new date (12,31,a.y)) + 1 + myDiff(1,1,b.y, b);
+      }else{
+          for(int mm= a.m+1;mm<b.m;mm++){
+            result += A[mm-1];
+            if(isLeapYear(a.y) && mm==2
+                result++
+          }
+        if(a.m == b.m)
+            result += b.d-a.d;
+        else{
+          result += b.d + A[a.m-1] -a.d;
+            if(isLaepYear(a.y) && a.m == 2)
+              result++;
+              }
+      }
+      return result;
+  }
